@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:ital,wght@0,300;0,400;0,700;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap');  
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+
+}
+*{
+    font-size: 'Nauito';
+    margin: 0 ;padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+header{
+    position:fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 3rem 3px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: large;
+    box-shadow: var(--box-shadow);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem ;
+    color:var(--light-color);
+}
+header .navbar a:hover{
+    color: white;
+    background-color: var(--green);
+}
+header .navbar a.active{
+    background-color: var(--green)
+}
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-left: 3%;
+    font-weight: bolder;
+}
+header .logo{
+    color: var(--green);
+    
+}
+header .icons i,
+header .icons a{
+    padding:0 1rem;
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background-color: #eee;
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: #eee;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+.icons #bars{
+    display: none;
+}
+
+
+
+@media (max-width:991px){
+    
+html{
+    font-size: 50%;
+}
+
+header{
+    padding: 1rem,2rem;
+}
+
+}
